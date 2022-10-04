@@ -1,0 +1,253 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+}
+
+img {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example {
+  width: 386px;
+  background-color: #3796FF;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  padding: 20px 7px 20px 7px;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#example {
+  margin: 0 10px 0 5px;
+  text-align: center;
+  background: transparent;
+  border: 0px solid transparent;
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1C2127;
+}
+
+.example-link {
+  background: transparent;
+  color: black;
+}
+
+.image {
+  margin-top: 35px;
+}
+
+.blue {
+  color: #3796FF;
+}
+
+.footer {  
+  padding: 2px 0 15px 0;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
+  color: #3796FF;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background-color: #3796FF50;
+  transition: ease 1s all;
+}
+
+input::placeholder {
+    color: #3796FF;
+}
+
+
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+  width: 100%;
+  margin: auto;
+  
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {  
+  opacity: 70%;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  font-family: 'Nunito', sans-serif;
+  background: transparent;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.collapsible-content a {
+  text-decoration: none;
+  color: #ffc800;
+}
+
+.collapsible-content a:hover {
+  background-color: #ffc80050;
+  transition: all 1s ease;
+}
+
+.content-inner {
+  text-align: left;
+}
+
+.title {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
+  color: #ffc800;
+}
+
+.subtitle {
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.subsubtitle {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  opacity: 50%;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 5px;
+  height: 60px;
+  font-family: 'Monofett', cursive;
+  font-size: 50px;
+  color: #242424;
+}
+
+.line {
+  border-bottom: 2px dotted #ffc800;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 1000px) {
+
+  .searchbox {
+    width: 290px;
+    font-size: 20px;
+  }
+
+
+  .example {
+    width: 290px;
+  }
+
+  #example {
+    font-size: 14px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  
+.title {
+  font-size: 40px;
+}
+
+ .line {
+  width: 80%;
+ }
+
+  
+.subsubtitle {
+  font-size: 14px;
+}
+
+}
